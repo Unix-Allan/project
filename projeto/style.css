@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.head-h1 h1{
+    font-family: Helvetica;
+    font-size: 2rem;
+    color: white;
+}
+
+.head-link a {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: snow;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.head-link a:hover {
+    text-decoration: underline;
+    color: skyblue;
+}
+
+.head-search input {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: none;
+}
+
+::placeholder {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+article {
+    padding: 40px;
+}
+
+.art-h2 {
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-h2 h2 {
+    background-color: yellow;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: black;
+    padding: 10px;
+}
+
+.art-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.art-product img {
+    width: 200px;
+    border-radius: 10px;
+}   
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 50px;
+}
+
+.container {
+    box-shadow: black 1px 1px 2px 1px ;
+    border: 2px lightgray solid;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-one {
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.6)), url(img/hero-one.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    padding: 30px;
+    text-align: center;
+}
+
+.category h2 {
+    font-family: sans-serif;
+    font-size: 2rem ;
+    color: yellow;
+}
+
+.category h3 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: yellow;
+}
+
+.card a img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.hero-two {
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.6)), url(img/hero-two.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-three {
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.6)), url(img/hero-three.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 20px;
+    height: 400px;
+    background:linear-gradient(to right, rgb(0, 0, 0), rgb(27, 26, 26)) ;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.links-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+ul h2 {
+    padding: 40px;
+    font-family: sans-serif;
+    color: white;
+}
+
+ul li {
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style-type: none;
+}
+
+ul li a {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+.sub-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-h2 {
+    padding: 10px;
+}
+
+.footer-h2 h2 {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.copy {
+    padding: 10px;
+}
+
+.copy span {
+    color: white;
+    font-family: Helvetica;
+    font-size: 1rem;
+}   

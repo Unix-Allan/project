@@ -1,0 +1,148 @@
+:root {
+    --main-bg-color: #04c46a;
+    --main-text-color: #000000;
+    --main-button-color: #04c46a;
+    --main-button-text-color: #ffffff;
+    --input-bg-color: #000000;
+    --input-text-color: #ffffff;
+    --button-color: crimson;
+    --border-radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.6), rgba(32, 32, 32, 0.6)), url(img/thumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.form-head {
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.input-email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 5px;
+}
+
+.input-email label {
+    font-size: 0.9rem;
+    color: var(--main-text-color);
+}
+
+.input-email input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+}
+
+.enviar button {
+    width: 100%;
+    padding: 15px;
+    color: var(--main-button-text-color);
+    background-color: var(--main-button-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.enviar button:hover {
+    background-color: var(--button-color);
+}
+
+.new-account {
+    display: flex;
+    gap: 5px;
+    color: var(--main-text-color);
+}
+
+.new-account .link {
+    color: blue;
+    text-decoration: none;
+}
+
+.new-account .link:hover {
+    text-decoration: underline;
+}
+
+.diff-account {
+    font-size: 1rem;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.diff-login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: var(--border-radius);
+    gap: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: background-color 0.3s;
+}
+
+.diff-login:hover {
+    background-color: var(--main-button-color);
+    color: var(--main-button-text-color);
+}
+
+.diff-login img {
+    width: 24px;
+}
+
+.diff-login span {
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .input-email input {
+        padding: 10px;
+    }
+
+    .enviar button {
+        padding: 12px;
+    }
+}
